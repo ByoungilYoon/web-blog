@@ -2,7 +2,7 @@ import { menulists } from "./Menulists";
 
 const MenuItems = () => {
   return (
-    <div className="flex flex-row gap-8">
+    <div className="flex flex-row gap-6">
       {menulists.map((menulist) => (
         <span
           key={menulist.title}
@@ -11,6 +11,8 @@ const MenuItems = () => {
             hover:font-semibold 
             duration-300 
             hover:underline
+            font-light
+            text-xs
           ">
             {menulist.title}
           </span>
